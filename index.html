@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Work №25</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<p class="text">Food-menu order-box</p>
+		<div id="menu">
+			<!-- 1 -->
+			<div class="card" onclick="addToCart('Hamburger', 200)">
+				<img
+					width="200px"
+					src="https://vkusnotochkamenu.ru/image/cache/catalog/photo/764668645-gamburger-600x600.jpg"
+					alt="Hamburger" />
+				<p class="text">
+					Hamburger <br />
+					200 KGZ
+				</p>
+			</div>
+			<!-- 2 -->
+			<div class="card" onclick="addToCart('Coffe', 70)">
+				<img
+					width="200px"
+					src="https://www.eatright.org/-/media/images/eatright-articles/eatright-article-feature-images/benefitsofcoffee_600x450.jpg?as=0&w=967&rev=6c8a9cd4a94d4cac8af8543054fd7b07&hash=4C95EA3A031A783C6DFA3ED04AB4FED4"
+					alt="Coffe" />
+				<p class="text">
+					Coffe <br />
+					70 KGZ
+				</p>
+			</div>
+			<!-- 3 -->
+			<div class="card" onclick="addToCart('Tea', 50)">
+				<img
+					width="200px"
+					src="https://www.foodandwine.com/thmb/6wTm7a0y87X97LK-ZMxe2787kI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-tea-FT-BLOG0621-7c7fd231e66d4fea8ca9a47cad52ba79.jpg"
+					alt="Tea" />
+				<p class="text">
+					Tea <br />
+					50 KGZ
+				</p>
+			</div>
+			<!-- 4 -->
+			<div class="card" onclick="addToCart('Cola', 120)">
+				<img
+					width="200px"
+					src="https://www.coca-cola.com/content/dam/onexp/kz/ru/brand-coca-cola/coca-cola-classic_product_image-desktop.jpg"
+					alt="Cola" />
+				<p class="text">
+					Cola <br />
+					120 KGZ
+				</p>
+			</div>
+			<!-- 5 -->
+			<div class="card" onclick="addToCart('Fries', 100)">
+				<img
+					width="200px"
+					src="https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Fries-Medium-2:1-3-product-tile-desktop?wid=829&hei=513&dpr=off"
+					alt="Fries" />
+				<p class="text">
+					Fries <br />
+					100 KGZ
+				</p>
+			</div>
+			<!-- 6 -->
+			<div class="card" onclick="addToCart('Cheesburger', 560)">
+				<img
+					width="200px"
+					src="https://s7d1.scene7.com/is/image/mcdonalds/Header_DoubleCheeseburger_832x472:1-3-product-tile-desktop?wid=763&hei=472&dpr=off"
+					alt="Cheesburger" />
+				<p class="text">
+					Cheesburger <br />
+					560 KGZ
+				</p>
+			</div>
+		</div>
+
+		<div id="cart">
+			<h2 class="text">Basket</h2>
+			<p class="text">Итого: KGZ <span id="cart-total">0</span></p>
+		</div>
+		<p class="text" id="cart-items"></p>
+		<script src="./script.js"></script>
+		<script src="./data/data.js	"></script>
+	</body>
+</html>
